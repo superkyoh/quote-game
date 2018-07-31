@@ -1,6 +1,6 @@
 export class Frase {
 
-    constructor(public fraseEng: string, public nomeFilme: string ) {
+    constructor(public fraseEng: string, public nomeSerie: string ) {
 
     }
 }

@@ -38,7 +38,7 @@ export class PainelComponent implements OnInit {
 
   public verificarResposta(): void {
     // verifica a resposta
-    if (this.resposta.toLowerCase() === this.rodadaFrase.nomeFilme) {
+    if (this.resposta.toLowerCase() === this.rodadaFrase.nomeSerie) {
       // incrementa
       this.rodada++;
       this.atualizaProgresso();
