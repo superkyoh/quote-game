@@ -1,5 +1,5 @@
 # quote-game-app
 
-Link here:
+Link here: https://quoteflix.netlify.com/
 
 Click in app1 folder to access the project.
