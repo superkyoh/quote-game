@@ -36,6 +36,12 @@ export class PainelComponent implements OnInit {
     this.resposta = (<HTMLInputElement>resposta.target).value.trim();
   }
 
+  public pularResposta(): void {
+    this.rodada++;
+    this.perdeVida();
+    this.atualizaRodada();
+  }
+
   public verificarResposta(): void {
     // verifica a resposta
     if (this.resposta.toLowerCase() === this.rodadaFrase.nomeSerie) {
