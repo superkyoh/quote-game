@@ -2,7 +2,7 @@
 
 this project was developed to study basics of Angular.
 
-Click and play here: link.
+Click and play here: https://quoteflix.netlify.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
