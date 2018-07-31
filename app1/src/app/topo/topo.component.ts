@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 
 export class TopoComponent {
 
-    public titulo = 'Quote Game ';
+    public titulo = 'Quoteflix: the game';
 }
