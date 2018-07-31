@@ -1,8 +1,8 @@
-# A quote game about popular movies and tv shows 
+# A quote game about popular series on Netflix
 
 this project was developed to study basics of Angular.
 
-Click and play here: link.
+Click and play here: https://quoteflix.netlify.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
@@ -10,5 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Disclaimer
+it's not related to netflix
 
 
