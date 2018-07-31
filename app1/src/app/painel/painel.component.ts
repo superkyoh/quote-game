@@ -39,6 +39,11 @@ export class PainelComponent implements OnInit {
   public pularResposta(): void {
     this.rodada++;
     this.perdeVida();
+    this.atualizaProgresso();
+    if (this.rodada === 10) {
+      this.encerrarJogo.emit('vitoria');
+      this.atualizaProgresso();
+    }
     this.atualizaRodada();
   }
 
