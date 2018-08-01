@@ -10,7 +10,7 @@ import { FRASES } from './frase-mock';
 export class PainelComponent implements OnInit {
 
   public frases: Frase[] = FRASES;
-  public instrucao = 'De qual filme ou série é essa frase?';
+  public instrucao = 'Can you guess which netflix original said this? ';
 
   public resposta = '';
 
@@ -47,9 +47,22 @@ export class PainelComponent implements OnInit {
     this.atualizaRodada();
   }
 
+  // public padronizarResposta(): string {
+  //   this.resposta.toLowerCase().trim().replace(/  +/g, ' ');
+
+  //   console.log(this.resposta);
+  //   return this.resposta;
+  // }
+
   public verificarResposta(): void {
     // verifica a resposta
-    if (this.resposta.toLowerCase() === this.rodadaFrase.nomeSerie) {
+
+    if (this.resposta.toLowerCase().replace(/  +/g, ' ') === this.rodadaFrase.nomeSerie) {
+
+      if (this.resposta === 'sense 8') {
+        this.resposta.replace(/  +/g, '');
+      }
+
       // incrementa
       this.rodada++;
       this.atualizaProgresso();
@@ -59,6 +72,7 @@ export class PainelComponent implements OnInit {
       }
       this.atualizaRodada();
     } else {
+      this.atualizaProgresso();
       this.perdeVida();
     }
   }
@@ -79,8 +93,6 @@ export class PainelComponent implements OnInit {
 
     if (this.tentativas === 0) {
       this.encerrarJogo.emit('derrota');
-      // this.tentativas = 3;
-      // this.rodadaFrase = this.frases[0];
     }
   }
 

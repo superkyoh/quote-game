@@ -4,15 +4,12 @@
     background-color: #f40612;
 }
 
-.netflix-logo{
-    width: 40px;
-    height: 40px;
+.navbar-brand{
+    white-space: normal;
 }
 
 .h1{
     font-family: 'Press Start 2P';
     font-size: 20px;
     font-weight: 300;
-
-
 }
