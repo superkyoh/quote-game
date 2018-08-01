@@ -42,7 +42,6 @@ export class PainelComponent implements OnInit {
     this.atualizaProgresso();
     if (this.rodada === 10) {
       this.encerrarJogo.emit('vitoria');
-      this.atualizaProgresso();
     }
     this.atualizaRodada();
   }
@@ -56,19 +55,13 @@ export class PainelComponent implements OnInit {
 
   public verificarResposta(): void {
     // verifica a resposta
-
     if (this.resposta.toLowerCase().replace(/  +/g, ' ') === this.rodadaFrase.nomeSerie) {
-
-      if (this.resposta === 'sense 8') {
-        this.resposta.replace(/  +/g, '');
-      }
 
       // incrementa
       this.rodada++;
       this.atualizaProgresso();
       if (this.rodada === 10) {
         this.encerrarJogo.emit('vitoria');
-        this.atualizaProgresso();
       }
       this.atualizaRodada();
     } else {
